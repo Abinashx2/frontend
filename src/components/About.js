@@ -7,7 +7,7 @@ const About = () => {
       <div className="about-container">
         {/* Header Section */}
         <div className="about-header">
-          <h2>About Bodoland Times</h2>
+          <h2>About Northeast Affairs</h2>
           <p className="subtitle">Your Trusted Source for News Since 2023</p>
           <div className="divider"></div>
         </div>
@@ -17,8 +17,8 @@ const About = () => {
           <div className="mission-text">
             <h3>Our Mission</h3>
             <p>
-              At Bodoland Times, we are committed to delivering accurate, unbiased, and timely news 
-              that matters to the people of Bodoland and beyond. Our team of dedicated journalists 
+              At Northeast Affairs, we are committed to delivering accurate, unbiased, and timely news 
+              that matters to the people of Northeast and beyond. Our team of dedicated journalists 
               works around the clock to bring you stories that inform, educate, and inspire.
             </p>
           </div>
@@ -95,8 +95,8 @@ const About = () => {
           <h3>Have a Story Tip or Feedback?</h3>
           <p>We value your input. Reach out to our team at:</p>
           <div className="contact-info">
-            <p>✉️ editor@bodolandtimes.com</p>
-            <p>📞 +91 123 456 7890</p>
+            <p>✉️ abinashdaimari5857@gmail.com</p>
+            <p>📞 +91 6000654953</p>
           </div>
           <button className="contact-button">Contact Us</button>
         </div>

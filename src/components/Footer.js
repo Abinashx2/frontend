@@ -43,7 +43,7 @@ const Footer = () => {
           <a href="#contact">Contact</a>
         </div>
 
-        <p className="footer-copy">&copy; {year} Bodoland Times. All rights reserved.</p>
+        <p className="footer-copy">&copy; {year} Northeast Affairs. All rights reserved.</p>
       </div>
     </footer>
   );

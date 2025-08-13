@@ -7,7 +7,7 @@ const ContactDetails = () => {
       <div className="container">
         {/* Header */}
         <div className="section-header">
-          <h2>Contact Bodoland Times</h2>
+          <h2>Contact Northest Afairs</h2>
           <p className="subtitle">Reach our editorial and advertising teams</p>
           <div className="divider"></div>
         </div>
@@ -25,14 +25,14 @@ const ContactDetails = () => {
                 <span className="icon email-icon"></span>
                 <div>
                   <span className="label">Email:</span>
-                  <a href="mailto:editor@bodolandtimes.com">editor@bodolandtimes.com</a>
+                  <a href="mailto:editor@bodolandtimes.com">abinashdaimari5857@gmail.com</a>
                 </div>
               </div>
               <div className="contact-item">
                 <span className="icon phone-icon"></span>
                 <div>
                   <span className="label">Phone:</span>
-                  <a href="tel:+917001234567">+91 700 123 4567</a>
+                  <a href="tel:+917001234567">+91 6000654953</a>
                 </div>
               </div>
               <div className="contact-item">
@@ -56,14 +56,14 @@ const ContactDetails = () => {
                 <span className="icon email-icon"></span>
                 <div>
                   <span className="label">Email:</span>
-                  <a href="mailto:ads@bodolandtimes.com">ads@bodolandtimes.com</a>
+                  <a href="mailto:ads@bodolandtimes.com">abinashdaimari5857@gmail.com</a>
                 </div>
               </div>
               <div className="contact-item">
                 <span className="icon phone-icon"></span>
                 <div>
                   <span className="label">Phone:</span>
-                  <a href="tel:+916009876543">+91 600 987 6543</a>
+                  <a href="tel:+916009876543">+91 6000654953</a>
                 </div>
               </div>
               <div className="contact-item">
@@ -88,7 +88,7 @@ const ContactDetails = () => {
                 <div>
                   <span className="label">Address:</span>
                   <address>
-                    Bodoland Times Media House<br />
+                    Northeast times<br />
                     123 Press Avenue, Kokrajhar<br />
                     Bodoland Territorial Region<br />
                     Assam - 783370, India

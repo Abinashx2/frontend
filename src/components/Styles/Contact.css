@@ -1,139 +1,259 @@
-/* Contact Section - Scoped Styles */
-.bt-contact-section {
-    padding: 4rem 2rem;
-    background-color: #f8f9fa;
-    color: #333;
-    line-height: 1.6;
+/* Styles/Contact.css */
+
+/* Reset some default */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+}
+
+/* Container */
+.contact-details {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.contact-details .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+  color: #003366;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.divider {
+  width: 80px;
+  height: 4px;
+  background-color: #0077cc;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* Contact Grid */
+.contact-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr;
+}
+
+/* For tablets and above */
+@media (min-width: 600px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .bt-contact-container {
-    max-width: 1200px;
-    margin: 0 auto;
+}
+
+/* For desktops */
+@media (min-width: 900px) {
+  .contact-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  /* Header - Scoped with bt- prefix */
-  .bt-contact-header {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  
-  .bt-contact-header h2.bt-contact-title {
-    font-size: 2.2rem;
-    color: #1a365d;
-    margin-bottom: 0.5rem;
-  }
-  
-  .bt-contact-subtitle {
-    font-size: 1.1rem;
-    color: #666;
-  }
-  
-  .bt-contact-divider {
-    height: 3px;
-    width: 80px;
-    background: #d35400;
-    margin: 1.5rem auto;
-  }
-  
-  /* Contact Grid - Scoped */
-  .bt-contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-  }
-  
-  .bt-contact-card {
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease;
-  }
-  
-  .bt-contact-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .bt-card-header {
-    padding: 1.5rem;
-    color: white;
-  }
-  
-  .bt-card-header h3.bt-card-title {
-    margin: 0;
-    font-size: 1.3rem;
-  }
-  
-  .bt-card-header p.bt-card-subtext {
-    margin: 0.3rem 0 0;
-    opacity: 0.9;
-    font-size: 0.9rem;
-  }
-  
-  /* Color Variants - Scoped */
-  .bt-editorial-header {
-    background: #1a365d;
-  }
-  
-  .bt-advertising-header {
-    background: #d35400;
-  }
-  
-  .bt-office-header {
-    background: #27ae60;
-  }
-  
-  .bt-card-body {
-    padding: 1.5rem;
-  }
-  
-  .bt-contact-item {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1.2rem;
-    align-items: flex-start;
-  }
-  
-  .bt-contact-item:last-child {
-    margin-bottom: 0;
-  }
-  
-  .bt-contact-icon {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 0.2rem;
-  }
-  
-  /* Icons - Scoped */
-  .bt-email-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23555'%3E%3Cpath d='M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z'/%3E%3C/svg%3E");
-  }
-  
-  .bt-phone-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23555'%3E%3Cpath d='M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z'/%3E%3C/svg%3E");
-  }
-  
-  /* Other styles remain the same but prefixed with bt- */
-  
-  /* Responsive - Scoped */
-  @media (max-width: 768px) {
-    .bt-contact-header h2.bt-contact-title {
-      font-size: 1.8rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .bt-contact-section {
-      padding: 3rem 1rem;
-    }
-    
-    .bt-contact-grid {
-      grid-template-columns: 1fr;
-    }
-  }
+}
+
+/* Contact Card */
+.contact-card {
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.15);
+}
+
+/* Card Header */
+.card-header {
+  margin-bottom: 18px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid transparent;
+}
+
+.card-header h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #004080;
+}
+
+/* Different header colors for categories */
+.card-header.editorial {
+  border-color: #0077cc;
+}
+
+.card-header.advertising {
+  border-color: #cc6600;
+}
+
+.card-header.office {
+  border-color: #339966;
+}
+
+.card-header p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Card Body */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Contact Item */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Label */
+.label {
+  font-weight: 600;
+  color: #0077cc;
+  margin-right: 6px;
+  min-width: 65px;
+  display: inline-block;
+}
+
+/* Links inside contact item */
+.contact-item a {
+  color: #004080;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-item a:hover,
+.contact-item a:focus {
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+/* Address styling */
+address {
+  font-style: normal;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Icons placeholders */
+/* You should replace these with actual icon images or font-icons */
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  flex-shrink: 0;
+}
+
+/* Email icon */
+.email-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%230077cc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 6v12h20V6H2zm18 2-8 5-8-5V8l8 5 8-5v0z"/></svg>');
+}
+
+/* Phone icon */
+.phone-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%230077cc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79a15.466 15.466 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1V19a1 1 0 01-1 1C9.61 20 4 14.39 4 7a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.2 2.2z"/></svg>');
+}
+
+/* Clock icon */
+.clock-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%230077cc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm0-14a6 6 0 016 6c0 1.59-.73 3.02-1.87 3.96L11 11V7h1v3.59l3.07 1.76A6 6 0 0112 6z"/></svg>');
+}
+
+/* Map icon */
+.map-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23339966" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 3l-5.36 2.14L9 3 3.5 5v15l5.36-2.14L15 20l5.5-2V3z"/></svg>');
+}
+
+/* Document icon */
+.document-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23339966" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>');
+}
+
+/* Social Media Section */
+.social-media {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.social-media h3 {
+  font-size: 1.8rem;
+  color: #003366;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+/* Social Icons Container */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* Social Icon Styles */
+.social-icon {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  filter: grayscale(0%);
+}
+
+/* Social media specific icons */
+/* You can replace these with real icons or font icons */
+
+.facebook-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%230076e6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.351C0 23.403.597 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.464.099 2.796.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.31h3.59l-.467 3.622h-3.123V24h6.116c.728 0 1.325-.597 1.325-1.324V1.325C24 .597 23.403 0 22.675 0z"/></svg>');
+}
+
+.twitter-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%2301acec" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 4.557a9.838 9.838 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.865 9.865 0 01-3.127 1.195 4.916 4.916 0 00-8.37 4.482A13.94 13.94 0 011.671 3.149a4.917 4.917 0 001.523 6.574 4.9 4.9 0 01-2.228-.616v.06a4.917 4.917 0 003.946 4.817 4.902 4.902 0 01-2.224.084 4.918 4.918 0 004.588 3.417 9.867 9.867 0 01-6.1 2.105c-.396 0-.787-.023-1.175-.068a13.945 13.945 0 007.548 2.212c9.057 0 14.009-7.506 14.009-14.009 0-.213-.005-.425-.015-.636A10.025 10.025 0 0024 4.557z"/></svg>');
+}
+
+.instagram-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23e4405f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10z"/><path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6z"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>');
+}
+
+.youtube-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23ff0000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.615 3.184a2.997 2.997 0 00-2.115-2.12C15.417.5 12 0.5 12 0.5s-3.418 0-5.5.564a3.006 3.006 0 00-2.115 2.12A31.552 31.552 0 004 6.75v2.503c0 1.248.17 2.77.385 3.898a3.004 3.004 0 002.115 2.12c2.082.56 5.5.56 5.5.56s3.417 0 5.5-.56a2.996 2.996 0 002.115-2.12c.215-1.128.385-2.65.385-3.898V6.75a31.55 31.55 0 00-1.385-3.566zM10 15.5V8.5l5 3.5-5 3.5z"/></svg>');
+}

@@ -11,7 +11,7 @@ const Bloglist = () => {
     const fetchBlogs = async () => {
       try {
         // Replace with your actual API endpoint
-        const response = await fetch('https://newsapi.org/v2/everything?q=apple&from=2025-07-12&to=2025-07-12&sortBy=popularity&apiKey=54eb100e110f4c49930dd5735d790996');
+        const response = await fetch('https://newsapi.org/v2/everything?q=tesla&from=2025-07-13&sortBy=publishedAt&apiKey=54eb100e110f4c49930dd5735d790996');
         
         if (!response.ok) {
           throw new Error('Failed to fetch blogs');
