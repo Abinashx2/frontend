@@ -25,7 +25,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container">
         <div className="nav-brand">
-          <span>Norteast Affairs</span>
+          <span>Northeast Affairs</span>
         </div>
         <div className={`nav-links ${isOpen ? 'active' : ''}`}>
           <a href="#home" onClick={()=>{setIsOpen(!setIsOpen); home();}}>Home</a>
